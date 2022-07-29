@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign In Form</title>
+	<style type="text/css">
+:root 
+{
+	--white: #fff;
+	--red: red;
+	--darkgreen: darkgreen;
+	--black: #000;
+	--light-colo: skyblue;
+	--border: .1rem solid rgba(0,0,0,.1);
+	--border-hover: .1rem solid var(--black);
+	--box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+*  
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+	transition: width none;
+}
+html 
+{
+	font-size: 62.5%; 
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+.login-form-container 
+{
+	background: rgba(255,255,255,.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	height: 100%;
+	width: 100%;
+}
+.login-form-container form 
+{
+	background: #fff;
+	border: var(--border);
+	box-shadow: var(--box-shadow);
+	padding: 2rem;
+	width: 40rem;
+	border-radius: .5rem;
+	margin: 2rem;
+}
+.login-form-container h3 
+{
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	font-variant: small-caps;
+	padding-bottom: 2rem;
+	text-transform: uppercase;
+	font-stretch: semi-expanded;
+}
+.login-form-container form span 
+{
+	display: block;
+	font-size: 2rem;
+	font-weight: 600;
+	padding-top: 1rem;
+	/*margin-bottom: 1rem;*/
+}
+.login-form-container form .data 
+{
+	padding: 1rem 1.2rem;
+	text-transform: lowercase;
+	margin: .7rem 0;
+	font-size: 1.5rem;
+	border: var(--border);
+	border-radius: .5rem;
+	color: var(--black);
+	width: 100%;
+}
+.login-form-container form .checkbox 
+{
+	/*margin: 1rem 0;*/
+	/*font-size: 1.5rem;*/
+
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	padding: 1rem 0;
+}
+.login-form-container form .checkbox label 
+{
+	font-size: 1.5rem;
+	color: var(--black);
+	cursor: pointer;
+}
+.login-form-container form .btn 
+{
+	width: 100%;
+	text-align: center;
+	margin: 1.5rem 0;
+	background: green;
+	color: whitesmoke;
+	padding: 1rem 2rem;
+	font-size: 2rem;
+	display: inline-block;
+	margin-top: 1rem;
+	font-weight: 600;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+.btn:hover 
+{
+	background: lightgreen;
+	color: var(--black);
+}
+.login-form-container form p 
+{
+	font-size: 1.5rem;
+	padding-top: 1.1rem;
+	font-family: sans-serif;
+	font-stretch: semi-expanded;
+	font-variant: small-caps;
+}
+.login-form-container form p a 
+{
+	color: var(--darkgreen);
+	text-decoration: underline;
+}
+	</style>
+</head>
+<body>
+
+   <div class="login-form-container">
+      	 <form>
+      	 	 <h3>Sign in</h3>
+      	 	 <span>username</span>
+      	 	 <input type="email" name="" placeholder="enter your email address" class="data">
+      	 	 <span>password</span>
+      	 	 <input type="password" name="" placeholder="enter your password" class="data">
+             <div class="checkbox">
+             	<input type="checkbox" name="" id="remember-me">
+             	<label for="remember-me">remember me</label>
+             </div>
+             <input type="submit" name="" value="sign in" class="btn">
+             <p>forget password ? <a href="#">click here</a></p>
+             <p>don't have an account ? <a href="#">create one</a></p>
+
+      	 </form>
+      </div>
+   
+
+</body>
+</html>
